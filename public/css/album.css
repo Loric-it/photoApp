@@ -130,6 +130,12 @@ h1 {
     color: white;
 }
 
+.btn-green {
+    background-color: #12d308;
+    color: #333;
+    border: 1px solid #12d308;
+}
+
 .btn-primary {
     background-color: #007bff;
 }

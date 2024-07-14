@@ -37,19 +37,9 @@
             >Voir l'album</a
           >
           <% } else { %>
-          <form
-            action="/albums/delete/<%= album._id %>"
-            method="POST"
-            style="display: inline"
-          >
-            <button
-              type="submit"
-              class="btn btn-red"
-              onclick="return confirm('Voulez-vous vraiment supprimer cet album ?');"
+            <a href="/albums/newImgs/<%= album._id %>/<%= album.title %>" class="btn btn-green"
+              >Ajouter une image</a
             >
-              Supprimer l'album
-            </button>
-          </form>
           <% } %>
         </div>
         <% }); %>
